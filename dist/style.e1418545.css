@@ -1,0 +1,161 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*style*/
+body {
+  background: #eee;
+}
+
+.globalHeader {
+  margin: 20px;
+}
+
+.search-from {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .search-from {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .globalHeader {
+    margin: 100px 0;
+  }
+}
+
+.search-from > input {
+  width: 100%;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-from > button {
+  white-space: nowrap;
+  padding: 0 28px;
+  border: none;
+  background: #f60;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+.globalMain {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.siteList {
+  display: flex;
+  flex-wrap: wrap;
+  margin:  20px;
+  justify-content: space-between;
+
+}
+@media (min-width: 500px) {
+  .siteList{
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+  .siteList li {
+    margin-right: 25px;
+  }
+
+}
+
+.siteList li {
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.siteList .site,
+.siteList .addButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 160px;
+  cursor: pointer;
+}
+
+.siteList .site .logo,
+.siteList .addButton .iconfont {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.siteList .site .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius:4px ;
+  background: #eee;
+  color: #f60;
+  margin: 4px;
+  cursor: default;
+}
+
+@media (min-width: 500px) {
+  .siteList .site .close{
+    display: none;
+  }
+  .siteList .site:hover .close{
+    display: block;
+  }
+}
+.siteList .site .link {
+}
+
+.siteList .addButton {
+}
+
+.siteList .addButton .iconfont {
+}
+
+.siteList .addButton .text {
+
+}
+
+
+
+/*# sourceMappingURL=style.e1418545.css.map */

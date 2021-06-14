@@ -8,7 +8,7 @@ const hashMap = xObject || [
 ]
 
 function simplifyUrl(url) {
-  return url.replace('https://', '').replace('http://', '').replace('www.', '').replace('/\/.*/', '')
+  return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, '') // 删除 / 开头的内容
 }
 
 const render = () => {

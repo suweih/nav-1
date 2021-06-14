@@ -131,7 +131,7 @@ var hashMap = xObject || [{
 }];
 
 function simplifyUrl(url) {
-  return url.replace('https://', '').replace('http://', '').replace('www.', '').replace('/\/.*/', '');
+  return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); // 删除 / 开头的内容
 }
 
 var render = function render() {
@@ -179,4 +179,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.038b9a6f.js.map
+//# sourceMappingURL=main.38c6a435.js.map
